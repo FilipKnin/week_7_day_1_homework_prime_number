@@ -10,7 +10,7 @@ FormView.prototype.bindEvents = function () {
     event.preventDefault();
     const inputtedNumber = event.target.number.value;
     PubSub.publish('FormView:number-submitted', inputtedNumber);
-  })
+  });
 
 };
 
